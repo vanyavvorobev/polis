@@ -1,0 +1,66 @@
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment-author,
+.comment-content {
+    padding: 4px 12px;
+
+    font-size: 14px;
+    line-height: 1.4;
+    color: #111827;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #fff;
+
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comment-author::placeholder,
+.comment-content::placeholder {
+    color: #9ca3af;
+}
+
+.comment-author:focus,
+.comment-content:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.comment-author {
+    height: 40px;
+}
+
+.comment-content {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.comment-submit {
+    width: 100%;
+    padding: 10px 16px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.comment-submit:hover {
+    background-color: #1d4ed8;
+}
+
+.comment-submit:active {
+    opacity: 0.9;
+}

@@ -1,0 +1,33 @@
+
+.articles-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.create-article-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 16px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.create-article-link:hover {
+    background-color: #1d4ed8;
+}
+
+.create-article-link:active {
+    opacity: 0.9;
+}
